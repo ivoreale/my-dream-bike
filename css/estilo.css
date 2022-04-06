@@ -1,0 +1,624 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: white ;
+}
+
+.grid1 {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr ;
+    grid-template-rows: 0,5fr 1fr 1fr 0,2fr;
+    grid-template-areas:
+    "header header header" 
+    ". info ."
+    ". productos ."
+    "footer footer footer";
+}
+header {
+    display: grid;
+    grid-area: header;
+    background-image: url(../images/maxresdefault.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-bottom: 300px;
+    height: 150px;
+    width: 100%;
+    
+}
+.logo {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    display: inline;
+}
+
+.titulo {
+    text-align: center;
+    font-size: 60px;
+    padding-top: 200px;
+    color: white;
+    letter-spacing: 10px;
+}
+h1 {
+    text-transform:uppercase;
+    
+}
+#subtitulo {
+    padding-top: 1px;
+    font-size: 30px;
+}
+
+nav {
+    position: absolute;
+    top: 80px;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 25px;
+    width: 95%;
+    height: 10%;
+}
+ul li {
+    margin-bottom: 0px;
+    list-style-type: none;
+    display:inline-block;
+    padding: 15px;
+}
+ul li a {
+    text-decoration: none;
+    color: black;
+    transition: all 300ms;
+    display: flex;  
+}
+ul li a:hover {
+    text-shadow: rgb(2, 96, 128) 1px 1px 20px;
+    text-decoration: underline;
+    transform: scale(1.2, 1.2);
+}
+.sticky {
+    position: fixed;
+    top: 0px;
+    height: 125px;
+    background-color: white;
+    width: 100%;
+}
+
+
+/* COMIENZO DE SECCIONES */
+
+/* NUESTRA MISION */
+
+section#info {
+    display: grid;
+    grid-area: info;
+    padding-top: 20px;
+}
+.nuestra_mision_div {
+    margin: 20px;
+    margin-bottom: 0px ;
+    padding-bottom: 50px;
+    
+}
+#subtitulo_NM {
+    display: block;
+    font-size: 30px;
+    text-align: left;
+    margin-left: 0;
+    margin-top: 40px;
+    
+}
+#p_nm {
+    display: inline-block;
+    text-align: left;
+    text-align: justify;
+    width: 500px;
+    height: 300px;
+}
+#imagen1 {
+    padding-left: 35px;
+}
+
+/* PROD. OF GIANT */
+#subtitulo_PO {
+    text-align: right;
+    font-size: 30px;
+    padding-right: 20px;
+}
+#p_POG {
+    display: flex;
+    text-align: right justify;
+    justify-content: right;
+    padding-left: 35px;
+    margin-top: 30px;
+    width: 500px;
+}
+iframe {
+    float: left;
+    margin-bottom: 20px;
+}
+
+/* CATÁLOGO Y ACCESORIOS */
+
+section#productos {
+    display: grid;
+    grid-area: productos;
+}
+.cat_acc {
+        text-align: center;
+        font-size: 30px;
+        text-transform: uppercase;
+        padding-bottom: 20px;
+        padding-top: 50px;
+}
+div h3 a {
+    color: black;
+    text-decoration: none;
+}
+.cat_accesorios_img {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+section div div a img:hover {
+    transform: scale(1.2, 1.2);
+}
+
+/* FOOTER */
+
+footer {
+    display: grid;
+    grid-area: footer;
+    background-color: #ccc;
+    margin-top: 100px;
+    height: 150px;
+    
+}  
+#footer_img {
+    float: left;
+}
+#footer_to_index {
+    width: 100px;
+}
+
+footer div {
+    background-color:#ccc; 
+}
+
+footer div h4 {
+    padding-right: 20%;
+    margin-bottom: 10px;
+}
+#contactanos {
+    text-align: justify center;
+    padding-top: 20px;
+    padding-left: 40%;
+    padding-right: 40%;
+    display: block;
+}
+.tiendas_contacto {
+    text-align: right;
+    padding-right: 20px;
+    padding-top: 0px;
+}
+#nuestras_redes {
+    text-align: center;
+    padding-left: 9%;
+    
+}
+#aligne_redes {
+    padding-left: 40%;
+}
+#espaciado {
+    padding-bottom: 0%;
+}
+
+/* CATÁLOGO */
+#fondo_cat {
+    display: grid;
+    grid-area: header;
+    background-image: url("../images/fondo_catálogo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    height: 55px;
+    width: 100%;
+}
+#prod_cat {
+    display: grid;
+    grid-area: productos;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+/* ACCESORIOS */
+#fondo_acc {
+    display: grid;
+    grid-area: header;
+    background-image: url("../images/fondo_acc.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    height: 55px;
+    width: 100%;
+}
+#prod_acc {
+    display: grid;
+    grid-area: productos;
+    margin-top: 50px;
+    margin-bottom: 0px;
+    display: flex;
+    justify-content:center;
+    gap: 50px;
+}
+
+/* TIENDAS */
+#fondo_tiendas {
+    display: grid;
+    grid-area: header;
+    background-image: url("../images/tiendas/giant_shops3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    height: 55px;
+    width: 100%;
+}
+.iframe_tiendas {
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+#tiendas_div_separacion {
+    display: grid;
+    grid-area: productos;
+    display: inline-flex;
+    justify-content: center;
+    gap: 2rem;
+    padding-right: 50px;
+}
+
+/* CONTACTO */
+#fondo_contacto {
+    display: grid;
+    grid-area: header;
+    background-image: url("../images/Contacto/contacto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 300px;
+    padding-bottom: 300px;
+    height: 55px;
+    width: 100%;
+}
+.form_contacto {
+    display: grid;
+    grid-area: info;
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+    margin-bottom: 70px;
+}
+.btn {
+    background-color:#5CC0FA ;
+    padding: 5px;
+    border-radius: 10px;
+    text-shadow: black 10 0 (255, 255, 255, 0,3);
+}
+.btn:hover {
+    transform: scale(1.2, 1.2);
+}
+
+
+
+
+/* DISEÑO RESPONSIVE */
+
+
+
+
+@media screen and (max-width:450px) {
+    .grid1{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 6% auto auto 6%;
+    grid-template-areas:
+    "header"
+    "info"
+    "productos"
+    "footer";
+    }
+    header {
+        display: grid;
+        grid-area: header;
+        background-image: none;
+        height: 10px;
+    }
+    .titulo {
+        display: none;
+    }
+    .sticky {
+        position: inherit;
+        width: auto;
+        height: 200px;
+        display: flex;
+        background-color: none;
+    }
+    .logo {
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-items: center;
+        padding-left: 100px;
+    }
+    nav {
+        padding-top: 50px;
+    }
+    
+    nav ul li {
+        font-size:medium;
+        padding-top: 50px;
+        padding: 0px;
+    }
+    
+    /* COMIENZO SECCIÓN */
+
+    #info {
+        display: grid;
+        grid-area: info;
+    }
+    #subtitulo_NM {
+        font-size: 20px;
+        padding-left: 24%;
+        padding-bottom: 10px;
+    }
+    #p_nm {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        text-align: justify;
+        padding-left: 30px;
+    }
+    #imagen1 {
+        width: 300px;
+        height: 250px;
+    }
+    #iframe_prod_giant {
+        display: none;
+    }
+    #subtitulo_PO {
+        text-align: left;
+        font-size: 20px;
+        padding-left: 15%;
+    }
+    #p_POG {
+        display: flex;
+        justify-content: center;
+        width: 300px;
+        text-align: justify;
+        padding-left: 30px;
+    }
+
+    /* CATÁLOGO Y ACCESORIOS */
+
+    #productos {
+        display: grid;
+        grid-area: productos;
+    }
+    .cat_acc {
+        text-align: left;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+    #acc {
+        padding-left: 90px;
+    }
+    .cat_accesorios_img {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
+        padding-left: 70px;
+        
+    }
+    .acc_img {
+        width: 170px;
+        padding-left: 20px;
+    }
+    section div div a img:hover {
+        transform: none;
+    }
+
+    /* FOOTER */
+    footer{
+        display: grid;
+        grid-area: footer;
+        height: 100px;
+    }
+    #footer_img {
+        width: 100px;
+        height: 100px;
+    }
+    .tiendas_contacto {
+        display: none;
+    }
+    #contactanos {
+        padding-left: 100px;
+    }
+    #nuestras_redes {
+        display: inline;
+        padding-top: 20px;
+        padding-left: 100px;
+    }
+    #aligne_redes {
+        padding-left: 100px;
+    }
+
+    /* CATÁLOGO */
+    #fondo_cat {
+        display: grid;
+        grid-area: header;
+        background-image: none;
+        height: 10px;
+    }
+    
+    #tittle_cat {
+        position: inherit;
+        display: inline;
+        color: black;
+        font-size: 30px;
+        padding-left: 70px;
+        padding-top: 0;
+        
+    }
+    .logo1 {
+        position:absolute;
+        top: 0;
+    }
+    .div_cat {
+        display: inline;
+        height: 20px;
+    }
+    #prod_cat {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
+        padding-left: 14px;
+    }
+
+    /* ACCESORIOS */
+
+    #fondo_acc {
+        display: grid;
+        grid-area: header;
+        background-image: none;
+        height: 10px;
+    }
+    #div_acc {
+        display: inline;
+        height: 20px;
+    }
+    #logo2 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-items: center;
+        padding-left: 100px;
+        top: 0;
+    }
+    #tittle_acc {
+        position: inherit;
+        display: inline;
+        color: black;
+        font-size: 30px;
+        padding-left: 40px;
+        padding-top: 0;
+    }
+    #prod_acc {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 150px 150px 150px 150px;
+        padding-left: 14px;
+        padding: 0 10px 10px 0;
+    }
+
+    /* TIENDAS */
+
+    #fondo_tiendas {
+        display: grid;
+        grid-area: header;
+        background-image: none;
+        height: 10px;
+    }
+    #logo3 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-items: center;
+        padding-left: 100px;
+        top: 0;
+    }
+    #div_tiendas {
+        display: inline;
+        height: 20px;
+    }
+    #tittle_tiendas {
+        position: inherit;
+        display: inline;
+        color: black;
+        font-size: 30px;
+        padding-left: 0px;
+        padding-top: 0;
+        text-align: justify;
+    }
+    #separacion_titulo {
+        margin-left: 70px;
+    
+    }
+    .iframe_tiendas {
+        width: 100;
+        height: 100;
+        left: 0;
+    }
+    #info {
+        display: grid;
+        grid-area: info;
+    }
+    #tiendas_div_separacion {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 300px 300px;
+        margin-top: 200px;
+    }
+
+    /* CONTACTO */
+    #fondo_contacto {
+        display: grid;
+        grid-area: header;
+        background-image: none;
+        height: 10px;
+    }
+    #logo4 {
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        display: flex;
+        justify-items: center;
+        padding-left: 100px;
+        top: 0;
+    }
+    #div_contacto {
+        display: inline;
+        height: 20px;
+    }
+    #tittle_contact {
+        position: inherit;
+        display: inline;
+        color: black;
+        font-size: 30px;
+        padding-left: 20px;
+        padding-top: 0;
+        text-align: justify;
+    }
+    .form_contacto {
+        position: absolute;
+        display: grid;
+        grid-area: info;
+        margin-top: 400px;
+        padding-left: 30px;
+
+    }
+
+}
