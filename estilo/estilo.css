@@ -6,6 +6,7 @@
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white ;
+    
 }
 
 /* INICIO */
@@ -50,7 +51,6 @@ ul li a {
 }
 ul li a:hover {
     text-shadow: rgb(2, 96, 128) 1px 1px 20px;
-    text-decoration: underline;
     transform: scale(1.2, 1.2);
     color: black;
 }
@@ -123,4 +123,60 @@ section div a img:hover {
     background-size: cover;
     background-attachment: fixed;
     height: 600px;
+}
+
+
+@media screen and (max-width:450px){
+    
+    .headerfixed {
+        display: none;
+    }
+    .sticky {
+        position: inherit;
+        width: auto;
+        height: 140px;
+        display: flex;
+    }
+
+    .padding_top {
+        padding-top: 80px;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    #subtitulo_POG {
+        padding-left: 20px;
+        display: flex;
+        justify-content: left;
+    }
+    #iframe_prod_giant {
+        display: none;
+    }
+
+    .separacion-mediaq {
+        padding-left: 70px;
+    }
+
+    /* CATÁLOGO y ACCESORIOS*/
+
+    .fondo_cat {
+        display: none;
+    }
+    .fondo_acc {
+        display: none;
+    }
+
+    /* TIENDAS Y CONTACTO*/
+    .fondo_tiendas {
+        display: none;
+    }
+    .fondo_contacto {
+        display: none;
+    }
+    .padding_contacto {
+        margin-top: 100px;
+    }
 }
