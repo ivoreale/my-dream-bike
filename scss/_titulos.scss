@@ -1,0 +1,30 @@
+.centrado {
+    padding-top: 150px;
+    .titulo {
+        text-transform: uppercase;
+        color: white;
+        font-size: 80px;
+        display: flex;
+        justify-content: center;
+    }
+    .subtitulo {
+        font-size: 40px;
+        display: flex;
+        justify-content: center;
+        color: white;
+    }
+}
+
+/* NUESTRA MISION */
+#subtitulo_NM {
+    font-size: 30px;
+    margin-top: 40px;
+}
+
+/* PROD.OF.GIANT */
+#subtitulo_POG {
+    font-size: 30px;
+    margin-top: 40px;
+    text-align: center;
+    padding-left: 370px;
+}
