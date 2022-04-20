@@ -2,6 +2,7 @@
 @import "titulos";
 @import "animaciones";
 
+
 .enlaces {
     text-decoration: none;
     color: black;
@@ -25,7 +26,6 @@ ul {
 }
 
 @media screen and (max-width:450px){
-    
     .headerfixed {
         display: none;
     }
@@ -38,7 +38,6 @@ ul {
         height: 140px;
         display: flex;
     }
-
     .padding_top {
         padding-top: 80px;
     }
@@ -56,13 +55,9 @@ ul {
     #iframe_prod_giant {
         display: none;
     }
-
     .separacion-mediaq {
         padding-left: 70px;
     }
-
-
-    
     .padding_contacto {
         margin-top: 100px;
     }
