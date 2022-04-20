@@ -9,6 +9,13 @@ body {
     
 }
 
+@mixin fondoheader($bkgrepeat, $bkgsize, $bkgattachment, $height) {
+    background-repeat: $bkgrepeat;
+    background-size: $bkgsize;
+    background-attachment: $bkgattachment;
+    height: $height;
+}
+
 .sticky {
     position: fixed;
     width: 100%;
@@ -17,11 +24,8 @@ body {
 }
 
 .headerfixed {
+    @include fondoheader(no repeat, cover , fixed , 400px );
     background-image: url(../images/maxresdefault.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 400px;
 }
 
 .cat_acc {
@@ -34,39 +38,27 @@ body {
 /* CATÁLOGO */
 
 .fondo_cat {
+    @include fondoheader(no repeat, cover, fixed, 500px);
     background-image: url(../images/fondo_catálogo.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
 }
 
 /* ACCESORIOS */
 
 .fondo_acc {
+    @include fondoheader(no repeat, cover, fixed, 600px);
     background-image: url(../images/fondo_acc.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
 }
 
 /* TIENDAS */
 
 .fondo_tiendas {
+    @include fondoheader(no repeat, cover, fixed, 600px);
     background-image: url(../images/tiendas/giant_shops3.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
 }
 
 /* CONTACTO */
 
 .fondo_contacto {
+    @include fondoheader(no repeat, cover, fixed, 600px);
     background-image: url(../images/Contacto/contacto.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 600px;
 }

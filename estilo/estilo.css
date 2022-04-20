@@ -14,11 +14,11 @@ body {
   top: 0px; }
 
 .headerfixed {
-  background-image: url(../images/maxresdefault.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 400px; }
+  height: 400px;
+  background-image: url(../images/maxresdefault.jpg); }
 
 .cat_acc {
   text-align: center;
@@ -28,35 +28,35 @@ body {
 
 /* CATÁLOGO */
 .fondo_cat {
-  background-image: url(../images/fondo_catálogo.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 500px; }
+  height: 500px;
+  background-image: url(../images/fondo_catálogo.jpg); }
 
 /* ACCESORIOS */
 .fondo_acc {
-  background-image: url(../images/fondo_acc.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 600px; }
+  height: 600px;
+  background-image: url(../images/fondo_acc.jpg); }
 
 /* TIENDAS */
 .fondo_tiendas {
-  background-image: url(../images/tiendas/giant_shops3.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 600px; }
+  height: 600px;
+  background-image: url(../images/tiendas/giant_shops3.jpg); }
 
 /* CONTACTO */
 .fondo_contacto {
-  background-image: url(../images/Contacto/contacto.jpg);
-  background-repeat: no-repeat;
+  background-repeat: no repeat;
   background-size: cover;
   background-attachment: fixed;
-  height: 600px; }
+  height: 600px;
+  background-image: url(../images/Contacto/contacto.jpg); }
 
 .centrado {
   padding-top: 150px; }
