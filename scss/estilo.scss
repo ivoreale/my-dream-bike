@@ -26,11 +26,8 @@ ul {
 }
 
 @media screen and (max-width:450px){
-    .headerfixed {
+    .headerfixed, .fondo_cat, .fondo_acc, .fondo_tiendas, .fondo_contacto {
         display: none;
-    }
-    .fondo_cat, .fondo_acc, .fondo_tiendas, .fondo_contacto {
-        @extend .headerfixed;
     }
     .sticky {
         position: inherit;

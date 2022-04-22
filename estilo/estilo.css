@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0; }
@@ -72,14 +73,12 @@ body {
     color: white; }
 
 /* NUESTRA MISION */
-#subtitulo_NM {
+#subtitulo_NM, #subtitulo_POG {
   font-size: 30px;
   margin-top: 40px; }
 
 /* PROD.OF.GIANT */
 #subtitulo_POG {
-  font-size: 30px;
-  margin-top: 40px;
   text-align: center;
   padding-left: 370px; }
 
@@ -102,7 +101,7 @@ ul li a {
     color: black; }
 
 @media screen and (max-width: 450px) {
-  .headerfixed {
+  .headerfixed, .fondo_cat, .fondo_acc, .fondo_tiendas, .fondo_contacto {
     display: none; }
   .sticky {
     position: inherit;
@@ -123,15 +122,5 @@ ul li a {
     display: none; }
   .separacion-mediaq {
     padding-left: 70px; }
-  /* CATÁLOGO y ACCESORIOS*/
-  .fondo_cat {
-    display: none; }
-  .fondo_acc {
-    display: none; }
-  /* TIENDAS Y CONTACTO*/
-  .fondo_tiendas {
-    display: none; }
-  .fondo_contacto {
-    display: none; }
   .padding_contacto {
     margin-top: 100px; } }

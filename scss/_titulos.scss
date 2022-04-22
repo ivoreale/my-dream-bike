@@ -23,8 +23,7 @@
 
 /* PROD.OF.GIANT */
 #subtitulo_POG {
-    font-size: 30px;
-    margin-top: 40px;
+    @extend #subtitulo_NM;
     text-align: center;
     padding-left: 370px;
 }
