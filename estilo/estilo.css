@@ -132,4 +132,11 @@ ul li a {
     color: black !important; }
   #iframe_prod_giant {
     width: 350px;
-    height: 250px; } }
+    height: 250px; }
+  .fondo_cat, .fondo_acc, .fondo_contacto {
+    height: 300px; }
+  .fondo_tiendas {
+    height: 380px; }
+    .fondo_tiendas #titulo-tiendas {
+      padding-left: 200px;
+      text-justify: auto; } }

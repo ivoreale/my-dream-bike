@@ -44,4 +44,14 @@
         width: 350px;
         height: 250px;
     }
+    .fondo_cat, .fondo_acc, .fondo_contacto {
+        height: 300px;
+    }
+    .fondo_tiendas {
+        height: 380px;
+        #titulo-tiendas {
+            padding-left: 200px;
+            text-justify:auto;
+        }
+    }
 }
