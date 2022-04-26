@@ -1,0 +1,34 @@
+@media screen and (max-width:450px){
+    .headerfixed, .fondo_cat, .fondo_acc, .fondo_tiendas, .fondo_contacto {
+        display: none;
+    }
+    .sticky {
+        position: inherit;
+        width: auto;
+        height: 140px;
+        display: flex;
+    }
+    .padding_top {
+        padding-top: 80px;
+    }
+    h2 {
+        text-align: center;
+    }
+    p {
+        text-align: justify;
+    }
+    #subtitulo_POG {
+        padding-left: 20px;
+        display: flex;
+        justify-content: left;
+    }
+    #iframe_prod_giant {
+        display: none;
+    }
+    .separacion-mediaq {
+        padding-left: 70px;
+    }
+    .padding_contacto {
+        margin-top: 100px;
+    }
+}
