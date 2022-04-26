@@ -32,3 +32,16 @@
         margin-top: 100px;
     }
 }
+
+@media screen and (min-width:450px) and (max-width:900px){
+    .headerfixed, .fondo_cat, .fondo_acc, .fondo_tiendas, .fondo_contacto {
+        background-image: none;
+    }
+    .titulo, .subtitulo {
+        color: black !important;
+    }
+    #iframe_prod_giant {
+        width: 350px;
+        height: 250px;
+    }
+}
