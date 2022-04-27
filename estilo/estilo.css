@@ -125,7 +125,7 @@ ul li a {
   .padding_contacto {
     margin-top: 100px; } }
 
-@media screen and (min-width: 450px) and (max-width: 900px) {
+@media screen and (min-width: 450px) and (max-width: 1024px) {
   .headerfixed, .fondo_cat, .fondo_acc, .fondo_tiendas, .fondo_contacto {
     background-image: none; }
   .titulo, .subtitulo {
@@ -140,3 +140,25 @@ ul li a {
     .fondo_tiendas #titulo-tiendas {
       padding-left: 200px;
       text-justify: auto; } }
+
+/* MAP PARA REDES SOCIALES */
+ul li a #facebook:hover {
+  animation: pulsate 1s ease-in-out; }
+
+ul li a #twitter:hover {
+  animation: pulsate2 1s ease-in-out; }
+
+ul li a #instagram:hover {
+  animation: pulsate3 1s ease-in-out; }
+
+@keyframes pulsate {
+  0% {
+    box-shadow: 0 0 25px blue; } }
+
+@keyframes pulsate2 {
+  0% {
+    box-shadow: 0 0 25px lightblue; } }
+
+@keyframes pulsate3 {
+  0% {
+    box-shadow: 0 0 25px lightpink; } }

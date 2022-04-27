@@ -1,0 +1,47 @@
+/* MAP PARA REDES SOCIALES */
+
+$redes-sociales:(
+    facebook: blue,
+    twitter: lightblue,
+    instagram: lightpink,
+);
+
+ul {
+    li {
+        a {
+        #facebook {
+            &:hover{
+                animation: pulsate 1s ease-in-out;
+        }
+    }
+        #twitter {
+            &:hover{
+                animation: pulsate2 1s ease-in-out;
+        }
+    }
+        #instagram {
+            &:hover{
+                animation: pulsate3 1s ease-in-out;
+            }
+        }
+    }
+}
+}
+
+
+
+@keyframes pulsate {
+    0%{
+        box-shadow: 0 0 25px map-get($redes-sociales, facebook);
+    }
+}
+@keyframes pulsate2 {
+    0%{
+        box-shadow: 0 0 25px map-get($redes-sociales, twitter);
+    }
+}
+@keyframes pulsate3 {
+    0%{
+        box-shadow: 0 0 25px map-get($redes-sociales, instagram);
+    }
+}
