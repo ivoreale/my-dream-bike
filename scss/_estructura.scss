@@ -24,7 +24,7 @@ body {
 
 .headerfixed {
     @include fondoheader(no repeat, cover , fixed , 400px );
-    background-image: url(../images/maxresdefault.jpg);
+    background-image: url(../images/nueva-portada-index.jpg);
 }
 
 .cat_acc {
@@ -38,7 +38,7 @@ body {
 
 .fondo_cat {
     @include fondoheader(no repeat, cover, fixed, 500px);
-    background-image: url(../images/fondo_catálogo.jpg);
+    background-image: url(../images/carrusel3.jpg);
 }
 
 /* ACCESORIOS */
